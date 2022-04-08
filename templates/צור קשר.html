@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        .Centerd {
+          border-bottom: 2px solid rgb(63, 63, 63);
+          text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-
-    <div style="margin: 5px;"> 
-        <h1>Contact</h1>
-    </div>
-    
-    <div style="margin: 5px;"> 
-        <h2>Please leave your personal information:</h2>
-    </div>
-    
-
-    <form action="Url" method="post">  
-
-        <label for="FirstName" style="padding-right: 10px;">* First name:</label>
-        <input type="text" id="FirstName" name="FirstName" required style="padding-right: 15px;">
-
-        <label for="LastName">* Last Name:</label>
-        <input type="text" id="LastName" name="LastName" required><br>
-                                                                                          
-        <label for="email" style="padding-right: 10px;">* Email:</label>
-        <input type="email" id="FullName" name="FullName" required style="padding-right: 15px;"> 
+    <div class="Centerd">
+        <div class="h1header" style="margin: 5px;"> 
+            <h1>Contact</h1>
+        </div>
         
-        <label for="Phonenumber" style="padding-right: 10px;">* Phone number:</label>
-        <input type="tel" id="Phonenumber" name="Phonenumber" required style="padding-right: 15px;"><br>
+        <div style="margin: 5px;"> 
+            <h2>Please leave your personal information:</h2>
+        </div>
+        
 
-        <label for="Dateofbirth">Date of birth:</label>
-        <input type="date" id="Dateofbirth" name="Dateofbirth"><br>
+        <form action="Url" method="post">  
 
-        <input type="submit"> <br><br>
+            <label for="FirstName" style="padding-right: 10px;">* First name:</label>
+            <input type="text" id="FirstName" name="FirstName" required style="padding-right: 15px;">
 
-        <p>inputs with * are required</p> <br><br><br>
+            <label for="LastName">* Last Name:</label>
+            <input type="text" id="LastName" name="LastName" required><br>
+                                                                                            
+            <label for="email" style="padding-right: 10px;">* Email:</label>
+            <input type="email" id="FullName" name="FullName" required style="padding-right: 15px;"> 
+            
+            <label for="Phonenumber" style="padding-right: 10px;">* Phone number:</label>
+            <input type="tel" id="Phonenumber" name="Phonenumber" required style="padding-right: 15px;"><br>
 
-        <a href="דף-בית.html">Home Page</a> <br><br><br><br>
-    </form>
+            <label for="Dateofbirth">Date of birth:</label>
+            <input type="date" id="Dateofbirth" name="Dateofbirth"><br>
 
+            <input type="submit"> <br><br>
+
+            <p><strong>inputs with * are required</strong></p> <br><br><br>
+
+            <a href="דף-בית.html">Home Page</a> <br><br><br><br>
+        </form>
+    </div>
 
     <p>Other projects:</p>
     <nav>
