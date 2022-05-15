@@ -1,8 +1,8 @@
 /* class to highlight current page */
-.highlight  { 
-    background-color: #ede0d4;
-    opacity: 60%;
-  }
+.active {
+    background-color: #d7cec5;
+    opacity: 70%;
+}
 
 
 
