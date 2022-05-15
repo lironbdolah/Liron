@@ -37,7 +37,7 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
     alert(' you are : '+ ageY +' years old') // raise alert of current age
 }
 
-
+// show/hide image function
 function setImageVisible(id, visible) {
   var img = document.getElementById(id);
   img.style.visibility = (visible ? 'visible' : 'hidden');
