@@ -1,14 +1,13 @@
-// navbar - mark current page
+// navbar - highlight current page
 var current = document.getElementById('defult');
-
-  function highlite(el)
+  function highlight(link)
   {
      if (current != null)
      {
          current.className = "";
      }
-     el.className = "highlite";
-     current = el;
+     link.className = "highlight";
+     current = link;
   }
 
   // calculate age
@@ -26,7 +25,7 @@ var current = document.getElementById('defult');
     var ageY =currentY - prevY;
     var ageM =Math.abs(currentM- prevM);
 
-    alert(' you are : '+ ageY +' years ' + ageM +' months old')
+    alert(' you are : '+ ageY +' years and ' + ageM +' months old')
 }
 
 

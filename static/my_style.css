@@ -1,57 +1,46 @@
 html,body{
     background-color: #fffbf7; /*  page backround color*/
     color: #5a5959; /* font color */
-
 }
 
  
+
 /* Grid setup */
 .pages_container{
-    height: 100%;
-    align-content: center;  
-    }
-  
-
-#pages_container{
     display: grid;
-    flex-direction: column;
     grid-template-areas: 
-    'Nav Nav Nav Nav Nav'
-    'x x Header x x'
-    'x x Main x x'
-    'x x x x x'
-    'Lower_Nav x x x x';
-    grid-gap: 10px;
+    'nav '
+    'header'
+    'main '
+    'lower_nav';
     }
 
+    
+  
 /*  Grid settings */
-.upper_navbar{
-    grid-area: Nav;
-    }
-
+.upper_navbar{ grid-area: nav;}
+    
 .header {
     text-align: center;
-    grid-area: Header;
+    grid-area: header;
     }
 
-.main_info{
-    text-align: center;
-    grid-area: Main;
-    border-bottom: 2px solid rgb(63, 63, 63);
-    align-content: center;  
-    }
-
-.lower_nav{
-    grid-area: Lower_Nav;
-    }
-
-.img{
-    grid-area: Main;
+.image{
+    grid-area: main;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+}
 
+.lower_nav{
+    border-top: 2px solid rgb(63, 63, 63);
+    grid-area: lower_nav;
+}
+
+.contact_info{
+    grid-area: main;
+    text-align: center;
 }
 
 

@@ -1,29 +1,18 @@
-.navbar a {
-    color: #545454 !important; /* font color */
-}
-
-.user{
-    display: flex;
-    align-content: end;
-}
-
-
-.navbar{
-
-    display: flex;
-    
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    background-color: #ede0d4;
-}
-
-.highlite  { /* class for current page */
+/* class to highlight current page */
+.highlight  { 
     background-color: #ede0d4;
     opacity: 60%;
   }
 
 
 
+/* customize upper navbar */ 
+.navbar{
+    display: flex;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #ede0d4;
+}
 
 .navbar-links li{
     list-style: none; /* remove dot from each link */
@@ -33,8 +22,7 @@
     height: 100%;
     margin-right: 30px;
     font-size: 15px;
-    position: relative;
-    
+    position: relative;   
 }
 
 .navbar-links li a{
@@ -42,11 +30,12 @@
     padding: 0;
     display: block;
     font-family: "Tahoma", Times, serif; /* change font */
-    
-    
+    color: #545454 !important; /* font color for navbar links */   
 }
 
-/*navbar hover animation */
+
+
+/*upper navbar line hover animation */
 .navbar-links li:after {
     content: "";
     position: absolute;
@@ -62,20 +51,20 @@
     background-color: rgb(89, 89, 89);
   }
 
+
+
+ /* customize lower navbar */ 
 .lower_nav li{
     list-style: none; /* remove dot from each link */
     padding-bottom: 3px;
-
 }
 
 .lower_nav li a{
-    
     padding: 0;
     display: block;
     font-family: "Tahoma", Times, serif; /* change font */
-}
-
-.lower_nav a {
     color: #545454 !important; /* font color */
 }
+
+
 
