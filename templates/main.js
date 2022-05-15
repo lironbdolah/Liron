@@ -19,17 +19,22 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
 
     var birthDate= document.getElementById("date-input").value;
     var dob = new Date(birthDate);  
-    var prevY= dob.getFullYear();     //extracting year from input date
-    var prevM= dob.getMonth();  
+    var entered_year= dob.getFullYear();     //extracting year from input date
+    var entered_month= dob.getMonth();  
 
     var now =new Date();                            //getting current date
     var currentY= now.getFullYear();                //extracting year from the date
     var currentM= now.getMonth();
 
-    var ageY =currentY - prevY;
-    var ageM =Math.abs(currentM- prevM);
 
-    alert(' you are : '+ ageY +' years and ' + ageM +' months old')
+    var ageY =currentY - entered_year;
+
+    if (ageY > 0 && currentM - entered_month < 0){
+      ageY -=1
+    }
+    var ageM =Math.abs(currentM- entered_month);
+
+    alert(' you are : '+ ageY +' years old') // raise alert of current age
 }
 
 
