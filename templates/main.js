@@ -14,9 +14,9 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
 });
 
 
-  // calculate age
-  function birthdayalert() {
-
+// calculate age
+function birthdayalert() {
+    var name = document.getElementById("first_name").value + ' ' +document.getElementById("last_name").value + ', ';
     var birthDate= document.getElementById("date-input").value;
     var dob = new Date(birthDate);  
     var entered_year= dob.getFullYear();     //extracting year from input date
@@ -34,7 +34,7 @@ const navLinks = document.querySelectorAll('nav a').forEach(link => {
     }
     var ageM =Math.abs(currentM- entered_month);
 
-    alert(' you are : '+ ageY +' years old') // raise alert of current age
+    alert(name + ageY +' years old') // raise alert of current age
 }
 
 // show/hide image function
