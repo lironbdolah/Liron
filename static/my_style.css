@@ -45,12 +45,14 @@ html,body{
     margin-right: auto;
     width: 20%;
     text-align: center;
+    margin-bottom: 150px;
+    animation: float 6s ease-in-out infinite;
 }
 
 .lower_footer{
     grid-area: lower_footer;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 .contact_info{
@@ -109,7 +111,7 @@ html,body{
     transition: all 0.5s ease;
     bottom: 5%;
   }
-  
+
   .navbar li:hover::after {
     width: 100%;
     height: 2px; /* line size */
@@ -142,6 +144,21 @@ html,body{
 .image a{
     text-decoration: none;
 }
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
  
 
 /* ### contact page style ### */
@@ -156,7 +173,7 @@ html,body{
     margin: 0 auto; 
     text-align: left;
     opacity: 65%;
-    margin-top: 80px; /* distance from top */
+    margin-top: 40px; /* distance from top */
     padding-left: 10px;
     
    }
